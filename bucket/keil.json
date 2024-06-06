@@ -5,5 +5,5 @@
   "license": "MIT",
   "url": "https://github.com/Immortal1125/bucketApps/releases/download/keil/Keil_v5.zip",
   "hash": "SHA256:89DCC2D18C7BC0A5B7F1142D89426E584376B8FDDF3DF5E5BD7A9F1CFE4ADA7D",
-  "bin": "UV4\\UV4.exe",
+  "bin": "UV4\\UV4.exe"
 }
