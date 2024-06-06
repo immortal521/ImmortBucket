@@ -1,0 +1,6 @@
+{
+	  "api": "https://github.com/Immortal1125/ImmortBucket/api/v1/json",
+	    "version": "1.0.0",
+	      "description": "My custom Scoop bucket with awesome software.",
+	        "homepage": "https://github.com/Immortal1125/ImmortBucket"
+}
