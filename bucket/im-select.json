@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "description": "im-select",
+  "homepage": "",
+  "license": "MIT",
+  "url": "https://github.com/Immortal1125/bucketApps/releases/download/im-select/im-select.exe",
+  "hash": "SHA256:27BE2D63257D9F86B2B95C8AB9807797E6B296EB745A98B845F855B1BCB83A0A",
+  "bin": "im-select.exe"
+}
