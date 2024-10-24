@@ -12,7 +12,7 @@
   "installer": {
     "script": [
       "New-Item -ItemType Directory -Path \"$env:USERPROFILE\\.config\\music-player\" -Force",
-      "$configTemplate = Get-Content -Path \"$dir\\config.yml\" -Encoding utf8",
+      "$configTemplate = Get-Content -Path \"$dir\\config.yml\" -Encoding utf8 -Raw",
       "$userInput = Read-Host '请输入音乐存储目录'",
       "$updatedConfig = $configTemplate -replace '{{music_path}}',$userInput",
       "[System.IO.File]::WriteAllText(\"$env:USERPROFILE\\.config\\music-player\\config.yml\", $updatedConfig, [System.Text.Encoding]::UTF8)"
