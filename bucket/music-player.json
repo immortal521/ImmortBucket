@@ -10,6 +10,7 @@
   },
   "bin":"music-player.exe",
   "installer": {
+    "type":"exe",
     "script": [
       "Start-Process -Wait -File \"$dir\\setting.exe\"",
       "Remove-Item -Path \"$dir\\setting.exe\"",
