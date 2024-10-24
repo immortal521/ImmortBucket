@@ -5,7 +5,7 @@
   "architecture": {
     "64bit": {
       "url": "https://github.com/immortal521/bucketApps/releases/download/music-player/music-player.7z",
-      "hash": "SHA256:85B9D4DFE281CDF3075FFE106C700DF8579AADE420DC8D60FACD4A615F449D1C"
+      "hash": "SHA256:28F54890572AE4416B503C5F29259999350A562811D1522FFA4C4A3A87D04735"
     }
   },
   "bin":"music-player.exe",
