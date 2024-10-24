@@ -12,7 +12,7 @@
   "installer": {
     "script": [
       "$configValue = Read-Host \"\n请输入音乐目录\"",
-      "Start-Process -Wait -File \"$dir\\install.exe\" -ArgumentList $configValue",
+      "Start-Process -Wait -File \"$dir\\install.exe\" -ArgumentList $configValue"
     ]
   },
   "uninstaller": {
