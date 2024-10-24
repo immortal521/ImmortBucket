@@ -12,8 +12,8 @@
   "installer": {
     "script": [
       "$configValue = Read-Host \"\n请输入音乐目录\"",
-      "Start-Process -Wait -File \"$dir\\setting.exe\" -ArgumentList $configValue",
-      "Remove-Item -Path \"$dir\\setting.exe\"",
+      "Start-Process -Wait -File \"$dir\\install.exe\" -ArgumentList $configValue",
+      "Remove-Item -Path \"$dir\\install.exe\"",
       "Remove-Item -Path \"$dir\\config.yml\""
     ]
   },
