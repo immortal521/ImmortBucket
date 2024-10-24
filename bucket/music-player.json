@@ -11,7 +11,7 @@
   "bin":"music-player.exe",
   "installer": {
     "script": [
-      "$configValue = Read-Host '请输入音乐目录: '",
+      "$configValue = Read-Host \"\n请输入音乐目录\"",
       "Start-Process -Wait -File \"$dir\\setting.exe\" -ArgumentList $configValue",
       "Remove-Item -Path \"$dir\\setting.exe\"",
       "Remove-Item -Path \"$dir\\config.yml\""
