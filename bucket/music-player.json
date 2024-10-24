@@ -12,10 +12,10 @@
   "installer": {
     "script": [
       "New-Item -ItemType Directory -Path \"$env:USERPROFILE\\.config\\music-player\" -Force",
-      "$configTemplate = [System.IO.File]::ReadAllText('$dir\\config.yml', [System.Text.Encoding]::UTF8)",
+      "$configTemplate = [System.IO.File]::ReadAllText(\"$dir\\config.yml\", [System.Text.Encoding]::UTF8)",
       "$userInput = Read-Host '请输入音乐存储目录'",
       "$updatedConfig = $configTemplate -replace '{{music_path}}',$userInput",
-      "[System.IO.File]::WriteAllText('$env:USERPROFILE\\.config\\music-player\\config.yml', $updatedConfig, [System.Text.Encoding]::UTF8)"
+      "[System.IO.File]::WriteAllText(\"$env:USERPROFILE\\.config\\music-player\\config.yml\", $updatedConfig, [System.Text.Encoding]::UTF8)"
     ]
   },
   "uninstaller": {
