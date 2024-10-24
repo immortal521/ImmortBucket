@@ -5,17 +5,15 @@
   "architecture": {
     "64bit": {
       "url": "https://github.com/immortal521/bucketApps/releases/download/music-player/music-player.7z",
-      "hash": "SHA256:28F54890572AE4416B503C5F29259999350A562811D1522FFA4C4A3A87D04735"
+      "hash": "SHA256:8AA012531A96A6B3DB9DD258547E1B35698D788046E814C9D5887EA99ECC087E"
     }
   },
   "bin":"music-player.exe",
   "installer": {
     "script": [
-      "New-Item -ItemType Directory -Path \"$env:USERPROFILE\\.config\\music-player\" -Force",
-      "$configTemplate = [System.IO.File]::ReadAllText(\"$dir\\config.yml\", [System.Text.Encoding]::UTF8)",
-      "$userInput = Read-Host '请输入音乐存储目录'",
-      "$updatedConfig = $configTemplate -replace '{{music_path}}',$userInput",
-      "[System.IO.File]::WriteAllText(\"$env:USERPROFILE\\.config\\music-player\\config.yml\", $updatedConfig, [System.Text.Encoding]::UTF8)"
+      "Start-Process -Wait -File \"$dir\\setting.exe\"",
+      "Remove-Item -Path \"$dir\\setting.exe\"",
+      "Remove-Item -Path \"$dir\\config.yml\""
     ]
   },
   "uninstaller": {
