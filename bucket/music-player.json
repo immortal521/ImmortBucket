@@ -1,0 +1,16 @@
+{
+  "version": "0.1.0",
+  "description": "rust写的一个终端音乐播放器",
+  "homepage": "https://github.com/ZegWe/music-player",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/immortal521/bucketApps/releases/download/music-player/music-player.7z",
+      "hash": "SHA256:F9B210D077BD89BDA84ADF1D0E29CB2D6B2F0C796F49DDEB0FD731751E7C6CFB"
+    }
+  },
+  "installer": {
+    "script": [
+      "Expand-Archive -Path \"$dir\\music-player.zip\" -DestinationPath \"$dir\" -Force"
+    ]
+  }
+}
