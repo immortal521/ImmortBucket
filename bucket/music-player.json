@@ -17,5 +17,10 @@
       "$updatedConfig = $configTemplate -replace '{{music_path}}',$userInput",
       "Set-Content -Path \"$env:USERPROFILE\\.config\\music-player\\config.yml\" -Value $updatedConfig -Encoding UTF8"
     ]
+  },
+  "uninstaller": {
+    "script": [
+      "Remove-Item -Path \"$env:USERPROFILE\\.config\\music-player\" -Recurse -Force"
+    ]
   }
 }
