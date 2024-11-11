@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "rust写的一个终端音乐播放器",
   "homepage": "https://github.com/ZegWe/music-player",
   "architecture": {
