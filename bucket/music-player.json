@@ -4,19 +4,11 @@
   "homepage": "https://github.com/ZegWe/music-player",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/immortal521/bucketApps/releases/download/music-player/music-player.7z",
-      "hash": "SHA256:373AA7E284F535707B683EE2949201044BBCDD003B132D0FEEF87ED51DE28890"
+      "url": "https://github.com/immortal521/bucketApps/releases/download/music-player/music-player.exe",
+      "hash": "SHA256:2882F281D9F6E124490C221DA9E1959D9BD1E376DF65414F2D6254BCFDA18D09"
     }
   },
   "bin":"music-player.exe",
-  "installer": {
-    "script": [
-      "$configValue = Read-Host \"\n请输入音乐目录\"",
-      "Start-Process -Wait -File \"$dir\\install.exe\" -ArgumentList \"$dir\\config.yml $configValue\"",
-      "Remove-Item -Path \"$dir\\install.exe\"",
-      "Remove-Item -Path \"$dir\\config.yml\""
-    ]
-  },
   "uninstaller": {
     "script": [
       "Remove-Item -Path \"$env:USERPROFILE\\.config\\music-player\" -Recurse -Force"
