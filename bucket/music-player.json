@@ -1,21 +1,20 @@
 {
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "rust写的一个终端音乐播放器",
   "homepage": "https://github.com/ZegWe/music-player",
   "architecture": {
     "64bit": {
       "url": "https://github.com/immortal521/bucketApps/releases/download/music-player/music-player.7z",
-      "hash": "SHA256:373aa7e284f535707b683ee2949201044bbcdd003b132d0feef87ed51de28890"
+      "hash": "SHA256:373AA7E284F535707B683EE2949201044BBCDD003B132D0FEEF87ED51DE28890"
     }
   },
   "bin":"music-player.exe",
   "installer": {
     "script": [
-      "New-Item -ItemType Directory -Path \"$env:USERPROFILE\\.config\\music-player\" -Force",
-      "$configTemplate = Get-Content -Path \"$dir\\config.yml\" -Encoding UTF8",
-      "$userInput = Read-Host '请输入音乐存储目录'",
-      "$updatedConfig = $configTemplate -replace '{{music_path}}',$userInput",
-      "Set-Content -Path \"$env:USERPROFILE\\.config\\music-player\\config.yml\" -Value $updatedConfig -Encoding UTF8"
+      "$configValue = Read-Host \"\n请输入音乐目录\"",
+      "Start-Process -Wait -File \"$dir\\install.exe\" -ArgumentList \"$dir\\config.yml $configValue\"",
+      "Remove-Item -Path \"$dir\\install.exe\"",
+      "Remove-Item -Path \"$dir\\config.yml\""
     ]
   },
   "uninstaller": {
