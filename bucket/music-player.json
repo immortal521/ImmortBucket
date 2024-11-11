@@ -4,7 +4,7 @@
   "homepage": "https://github.com/ZegWe/music-player",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/immortal521/bucketApps/releases/download/music-player/music-player.7z",
+      "url": "https://github.com/immortal521/bucketApps/releases/download/music-player/music-player.exe",
       "hash": "SHA256:7075634EA410845E6CCB5A6868315DE9931F298A4443FCD09879C809A6A5F0A1"
     }
   },
