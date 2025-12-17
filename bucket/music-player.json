@@ -1,14 +1,14 @@
 {
-  "version": "0.1.4",
+  "version": "0.1.0",
   "description": "rust写的一个终端音乐播放器",
   "homepage": "https://github.com/ZegWe/music-player",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/immortal521/bucketApps/releases/download/music-player/music-player.exe",
-      "hash": "SHA256:7075634EA410845E6CCB5A6868315DE9931F298A4443FCD09879C809A6A5F0A1"
+      "url": "https://github.com/immortal521/music-player/releases/download/0.1.0/music-player.exe",
+      "hash": "sha256:7075634ea410845e6ccb5a6868315de9931f298a4443fcd09879c809a6a5f0a1"
     }
   },
-  "bin":"music-player.exe",
+  "bin": "music-player.exe",
   "uninstaller": {
     "script": [
       "Remove-Item -Path \"$env:USERPROFILE\\.config\\music-player\" -Recurse -Force"
